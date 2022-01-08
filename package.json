@@ -1,0 +1,33 @@
+{
+  "name": "@everlast-brands/package-starter",
+  "version": "0.1.1",
+  "description": "Template project used to quickly create typescript npm packages.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EverlastBrands/package-starter.git"
+  },
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "Package",
+    "Typescript"
+  ],
+  "author": "Matthew Lefevre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EverlastBrands/package-starter/issues"
+  },
+  "homepage": "https://github.com/EverlastBrands/package-starter#readme",
+  "devDependencies": {
+    "jest": "^27.3.1",
+    "typescript": "^4.4.4"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}
