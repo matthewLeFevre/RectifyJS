@@ -1,12 +1,14 @@
 {
-  "name": "@everlast-brands/package-starter",
-  "version": "0.1.1",
-  "description": "Template project used to quickly create typescript npm packages.",
+  "name": "rectifyjs",
+  "version": "0.1.0",
+  "description": "Opinionated ODM for RethinkDB",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
     "build": "tsc",
-    "prepare": "npm run build"
+    "build:watch": "tsc --watch",
+    "prepare": "npm run build",
+    "dev": "nodemon dist/index"
   },
   "repository": {
     "type": "git",
@@ -20,14 +22,18 @@
   "author": "Matthew Lefevre",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/EverlastBrands/package-starter/issues"
+    "url": "https://github.com/matthewLeFevre/RectifyJS/issues"
   },
-  "homepage": "https://github.com/EverlastBrands/package-starter#readme",
+  "homepage": "https://github.com/matthewLeFevre/RectifyJS#readme",
   "devDependencies": {
     "jest": "^27.3.1",
+    "nodemon": "^2.0.15",
     "typescript": "^4.4.4"
   },
   "files": [
     "dist/**/*"
-  ]
+  ],
+  "dependencies": {
+    "rethinkdb": "^2.4.2"
+  }
 }
