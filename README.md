@@ -28,10 +28,10 @@ let DB: Rectify;
 })()
 ```
 ### Rectify.build
-Instantiates a new instance of rectify
+Instantiates a new instance of `Rectify`
 
 | Param      |  Default Values  | Type     |
-|-------------------------------|----------|
+|------------|------------------|----------|
 | db         | "test"           | string   |
 | host       | "localhost"      | string   |
 | port       | 28015            | number   |
@@ -41,16 +41,19 @@ Instantiates a new instance of rectify
 
 Methods for all CRUD Operations
 
-Create:
+**Create:**
   - `create`
   - `createWithId`
-Read:
+
+**Read:**
   - `getAll`
   - `getById`
   - `getByQuery`
-Update:
+
+**Update:**
   - `updateById`
-Delete:
+
+**Delete:**
   - `deleteById`
   - `deleteAll`
 
