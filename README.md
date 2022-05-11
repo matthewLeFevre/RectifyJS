@@ -5,13 +5,13 @@ Opinionated completely asynchronous ODM for RethinkDB. Provides generic CRUD fun
 ## Installation
 
 ```
-yarn add rectify-js
+yarn add rectifyjs
 ```
 
 ## Setup
 
 ```typescript
-import Rectify from "rectify-js";
+import Rectify from "rectifyjs";
 
 let DB: Rectify;
 
@@ -116,16 +116,8 @@ Create methods always return `id` of newly created item.
 
 ```typescript
 (async function () {
-  const id = await DB.tables.users.create({
-    name: "John",
-    age: 37,
-    isMarried: true,
-  });
+  await DB.tables.users.deleteWithId('user-id');
 
-  const id = await DB.tables.users.createWithId("random-id", {
-    name: "Jill",
-    age: 23,
-    isMarried: false,
-  });
+  await DB.tables.users.deleteAll();
 })();
 ```

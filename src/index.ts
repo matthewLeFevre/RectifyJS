@@ -98,7 +98,7 @@ export class Table {
         return await r.table(this.name).g(field).ne(value).run(this.conn)
       case RectifyOperator.EQ:
       default:
-        return await r.table(this.name).g(field).eq(value).run(this.conn)
+        return await r.table(this.name).filter({[field]: value}).run(this.conn)
     }
   }
 }
